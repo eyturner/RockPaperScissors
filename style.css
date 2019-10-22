@@ -1,0 +1,125 @@
+#container {
+  font-family: 'Fascinate Inline', cursive;
+  text-shadow: 4px 4px black;
+  justify-content: center;
+  width: 100%;
+  padding: 2% 15% 15% 15%;
+  background: url("images/background.jpg") no-repeat center;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btnDiv {
+  text-align: center;
+  border-radius: 10%;
+}
+
+.btnDiv button {
+  margin: 5%;
+  background-color: inherit;
+  border: none;
+  
+}
+
+.btnDiv button:hover {
+  animation-name: btnShake;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btnShake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  33% {
+    transform: rotate(20deg);
+  }
+
+  66% {
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.btnDiv img {
+  height: 80px;
+  width: 80px;
+}
+
+#gameDiv {
+  border-radius: 10%;
+  padding: 1px;
+  display: inline-block;
+  margin: 5% 25% 5% 1%;
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+}
+
+#game {
+  color: white;
+  text-align: center;
+}
+
+.choice {
+  border-radius: 5%;
+  padding: 10px;
+  display: inline-block;
+  height: 100%;
+  width: 49%;
+  text-align: center;
+  color: white;
+}
+
+#userChoice {
+  float: left;
+}
+
+#userChoiceImg, #compChoiceImg {
+  border: none;
+  margin: 15% 0% 15% 0%;
+  height: 150px;
+  width: 150px;
+}
+
+#scoreDiv {
+  display: inline-block;
+  position: inherit;
+  width: 100%;
+  text-align: center;
+}
+
+#userScore, #compScore {
+  color: white;
+  display: inline-block;
+}
+
+#compScore {
+  margin-left: 18%;
+}
+
+#userScore h2, #compScore h2 {
+  margin: 10px;
+}
+
+.score {
+  padding: 20px;
+  margin: 15px;
+  display: inline;
+  text-align: center;
+}
+
+.resetBtn {
+  margin-top: 10%;
+  text-align: center;
+  color: white;
+}
+
+.hide {
+  display: none;
+}

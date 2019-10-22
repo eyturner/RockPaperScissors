@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1 id="game">Rock Paper Scissors</h1>
+    <div id="scoreDiv">
+      <div id="userScore">
+        <h2>Player</h2>
+        <h3 class="score" id="user">0</h3>
+      </div>
+      <div id="compScore">
+        <h2>Computer</h2>
+        <h3 class="score" id="comp">0</h3>
+      </div>
+    </div>
+    <div id="gameDiv">
+      <div class="choice" id="userChoice">
+        <h2 id="playersChoice">Player's Choice</h2>
+        <img src = "" id="userChoiceImg" alt="">
+      </div>
+      <div class="choice" id="compChoice">
+        <h2>Computer's Choice</h2>
+        <img src = "" id="compChoiceImg" alt="">
+      </div>
+    </div>
+    <div class="btnDiv">
+      <button class="rockBtn" value="rock">
+        <img src="images/rock.png"></button>
+      <!-- I know this is the symbol for spock... -->
+      <button class="scisBtn" value="scissors">
+        <img src="images/scissors.png"></button>
+      <button class="paperBtn" value="paper">
+        <img src="images/paper.png"></button>
+    </div>
+    <div class="resetBtn hide">
+      <button>Reset?</button>
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
